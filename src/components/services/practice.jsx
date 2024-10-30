@@ -6,20 +6,24 @@ const Practice = () => {
   return (
     <div className="flex justify-between mt-20">
    
-      <div>
+      <div className='p-10'>
         <div>
           <h1
-            className="leading-[68px] text-[64px] text-white pb-[10%] pl-2 border-b border-dotted rounded-bl-[55px]"
+            className="leading-[68px] text-[64px] text-white pb-[10%] pl-2 "
             style={{ fontFamily: 'Italiana' }}
           >
             Our Services
+            <div className="w-72 h-24  border-b border-dotted border-white rounded-bl-full ml-[2%]" />
           </h1>
+        
         </div>
         <div>
-          <div className="pb-3 w-[380px] pr-2 border-r border-t border-dotted rounded-r-[55px]">
+      
+          <div className="pb-3 w-[380px] pr-2 ">
+          <div className="w-20 h-72 ml-[80%]  rounded-tr-full" style={{marginTop:"-10.5%",borderRight:"1px solid white"}} />
             <img
               src={image1}
-              className="mt-3 w-[380px] h-[440px] rounded-[55px]"
+              className="mt-[-50%] w-[380px] h-[440px] mr-4 rounded-[20%]"
               alt="Service Description"
             />
           </div>

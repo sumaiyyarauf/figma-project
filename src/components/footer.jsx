@@ -82,6 +82,13 @@ const Footer = () => {
         </div>
     </div>
 
+
+    <div>
+        <div className='text-white'>
+            <h1>Follow Us On:</h1>
+        </div>
+    </div>
+
    </footer>
   )
 }

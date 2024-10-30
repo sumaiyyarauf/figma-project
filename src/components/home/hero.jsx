@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex absolute justify-between relative top-0 bg-black text-white'>
+    <div className='flex absolute justify-between relative top-0 bg-black text-white mt-[-7%]'>
       <div className='relative'>
         <img src={image} className='w-[689px] h-[639px]' alt="Luxury charter flight experience" />
 
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="max-w-md mx-auto p-4 border: 0.83px border-[#FFFFFF26] m-20 rounded-lg shadow-lg bg-[#0F0F0F]">
+      <div className="max-w-md mx-auto  p-4 border: 0.83px border-[#FFFFFF26] m-20 rounded-lg shadow-lg bg-[#0F0F0F]">
         <div className='flex justify-between gap-[5px]'>
           <button className='hover:bg-white hover:text-black p-1 rounded-[9.01px] border-white border-[1px] '>One Trip</button>
           <button className='hover:bg-white hover:text-black p-1 rounded-[9.01px] border-white border-[1px] '>Round Trip</button>
