@@ -7,7 +7,7 @@ import image4 from "../../assets/Vector (3).png"
 const Service = () => {
   return (
     <div>
-        <div className='pl-[60%] text-white '>
+        <div className='pl-[60%] text-white mr-[5%] '>
             <h1 className='text-[#F5F5F5] text-[64px] leading-[68px] py-16 ' style={{fontFamily: "Italiana",
                }}>We Listen and Learn</h1>
             <div style={{fontFamily: "Poppins",

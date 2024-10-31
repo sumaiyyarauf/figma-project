@@ -4,30 +4,19 @@ import HomePage from './components/homePage';
 import Navbar from './components/navbar';
 import Service from './components/services/hero';
 import Section from './components/services/section';
-// import Practice from './components/services/practice';
 import Flying from './components/services/Flying';
 import Footer from './components/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Desktop from './components/home/desktop2';
 
 
 function App() {
   return (
     <div className="bg-black">
-      {/* <Navbar/>
-      <Home/>
-      <About/>
-      <Service/>
-      <Section/> */}
-      {/* <Practice /> */}
-      {/* <Flying/>
-      <Footer/> */}
-       
-
-
-
       
     <BrowserRouter>
        <Navbar/> 
+       <Desktop/>
        <Routes>
            <Route 
              path='/'

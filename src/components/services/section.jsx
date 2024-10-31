@@ -6,8 +6,8 @@ import image4 from '../../assets/service2.png';
 
 const Section = () => {
   return (
-    <main className='px-4 md:mx-14'>
-      <div className='flex flex-col md:flex-row justify-between mt-10 md:mt-20'>
+    <main className='px-4 md:mx-14 pb-[4%]'>
+      <div className='flex flex-col md:flex-row justify-between mt-10 md:mt-20 mb-[-2%]'>
         <div>
           <h1
             className="leading-[48px] md:leading-[68px] text-[36px] md:text-[64px] text-white"
@@ -17,7 +17,7 @@ const Section = () => {
           </h1>
         </div>
 
-        <div className="mt-4 md:mt-2 md:pr-2 flex justify-center md:block">
+        <div className="mt-4 md:mt-2 md:pr-2 mr-[-5%] flex justify-center md:block">
           <button className="border-[0.5px] text-white rounded-[20px] px-4 py-2 text-sm">
             Know More
           </button>

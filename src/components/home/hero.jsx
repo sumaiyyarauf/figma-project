@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex absolute justify-between relative top-0 bg-black text-white mt-[-7%]'>
+    <div className='flex flex-col lg:flex-row  absolute justify-between relative top-0 bg-black text-white mt-[-7%]'>
       <div className='relative'>
         <img src={image} className='w-[689px] h-[639px]' alt="Luxury charter flight experience" />
 
