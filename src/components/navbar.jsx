@@ -1,7 +1,8 @@
 // import { useRef, useEffect } from 'react';
 import React from 'react';
 import Logo from '../assets/logo.png';
-import gsap from 'gsap';
+import { Link } from "react-router-dom";
+// import gsap from 'gsap';
 
 const Navbar = () => {
   // const logoRef = useRef(null);
@@ -23,19 +24,41 @@ const Navbar = () => {
       className='flex justify-between relative items-center text-white w-full z-10 h-[80px] px-[40px] bg-[#141414B2] opacity-70'
     >
       <div>
+        <Link to={"/"}>
         <img 
           src={Logo} 
           alt="Logo" 
           // ref={logoRef} // Ref for the GSAP animation
           className='h-full ml-8' 
         />
+        </Link>
       </div>
       <nav>
         <ul className='flex gap-[20px]'>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Aircraft Guide</li>
-          <li>Reviews</li>
+          <li>
+              <Link  className="max-sm:text-[24px]" to={"/about"}>
+                About
+              </Link>
+          </li>
+
+          <li>
+              <Link  className="max-sm:text-[24px]" to={"/section"}>
+                Services
+              </Link>
+          </li>
+
+          <li>
+              <Link  className="max-sm:text-[24px]" to={"/service"}>
+                Aircraft Guide
+              </Link>
+          </li>
+
+          <li>
+              <Link  className="max-sm:text-[24px]" to={"/flying"}>
+                Reviews
+              </Link>
+          </li>
+        
         </ul>
       </nav>
     </header>
