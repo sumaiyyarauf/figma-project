@@ -8,7 +8,7 @@ import Flying from './components/services/Flying';
 import Footer from './components/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Desktop from './components/home/desktop2';
-
+import Home from './components/home/hero';
 
 function App() {
   return (
@@ -16,11 +16,14 @@ function App() {
       
     <BrowserRouter>
        <Navbar/> 
-       <Desktop/>
        <Routes>
            <Route 
              path='/'
              element={<HomePage/>}
+           />
+            <Route 
+             path='/home'
+             element={<Home/>}
            />
            <Route 
              path='/about'
@@ -37,6 +40,10 @@ function App() {
            <Route 
              path='/flying'
              element={<Flying/>}
+           />
+           <Route 
+             path='/desktop'
+             element={<Desktop/>}
            />
         
        </Routes>

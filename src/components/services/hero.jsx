@@ -20,33 +20,25 @@ const Service = () => {
               </p>
             </div>
         </div>
-        <div className='flex w-full justify-center gap-[8%] mt-16 '>
-            <div>
-                <img src={image1} className='p-4 h-[136px] w-[113.77px] border rounded-[22.49px]' alt="" />
-                <p className='text-[#F5F5F5] mt-5'>
-                   ARG/US Safety Rated Aircraft
-                </p>
-            </div>
-            <div>
-                <img src={image2} className='p-4 h-[136px] w-[113.77px] border rounded-[22.49px]' alt="" />
-                <p className='text-[#F5F5F5] mt-5'>
-                   Full Transparency
-                </p>
-            </div>
-            <div>
-                <img src={image3} className='p-4 h-[136px] w-[113.77px] border rounded-[22.49px]' alt="" />
-                <p className='text-[#F5F5F5] mt-5'>
-                   24/7 Availability
-                </p>
-            </div>
-            <div>
-                <img src={image4} className='p-4 h-[136px] w-[113.77px] border rounded-[22.49px]' alt="" />
-                <p className='text-[#F5F5F5] mt-5'>
-                  Concierge Services
-                </p>
-            </div>
-            
-        </div>
+        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row w-full justify-center gap-[8%] mt-16">
+    <div className="flex flex-col items-center">
+        <img src={image1} className="p-4 h-[136px] w-[113.77px] border rounded-[22.49px]" alt="" />
+        <p className="text-[#F5F5F5] mt-5">ARG/US Safety Rated Aircraft</p>
+    </div>
+    <div className="flex flex-col items-center">
+        <img src={image2} className="p-4 h-[136px] w-[113.77px] border rounded-[22.49px]" alt="" />
+        <p className="text-[#F5F5F5] mt-5">Full Transparency</p>
+    </div>
+    <div className="flex flex-col items-center">
+        <img src={image3} className="p-4 h-[136px] w-[113.77px] border rounded-[22.49px]" alt="" />
+        <p className="text-[#F5F5F5] mt-5">24/7 Availability</p>
+    </div>
+    <div className="flex flex-col items-center">
+        <img src={image4} className="p-4 h-[136px] w-[113.77px] border rounded-[22.49px]" alt="" />
+        <p className="text-[#F5F5F5] mt-5">Concierge Services</p>
+    </div>
+</div>
+
 
     </div>
   )

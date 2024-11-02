@@ -9,6 +9,7 @@ import twiter from "../assets/flogo3.png";
 import youtube from "../assets/flogo4.png";
 import image1 from "../assets/footer1.png";
 import image2 from "../assets/footer2.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -31,31 +32,42 @@ const Footer = () => {
               }}>
                 Useful Links
             </h2>
-            <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
-               style={{fontFamily: "Jura",
-               }}>
-                Home
-            </h6>
-            <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
-               style={{fontFamily: "Jura",
-               }}>
-               About Us
-            </h6>
-            <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
-               style={{fontFamily: "Jura",
-               }}>
-               Pricing
-            </h6>
-            <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
-               style={{fontFamily: "Jura",
-               }}>
-                Testimonial
-            </h6>
-            <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
-               style={{fontFamily: "Jura",
-               }}>
-                Book a Flight
-            </h6>
+
+             <Link to={"/"}>
+                 <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
+                    style={{fontFamily: "Jura" }}>
+                    Home
+                 </h6>
+             </Link>
+
+             <Link to={"/about"}>
+                 <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
+                    style={{fontFamily: "Jura" }}>
+                    About Us
+                 </h6>
+             </Link>
+
+             <Link to={""}>
+                 <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
+                    style={{fontFamily: "Jura" }}>
+                    Pricing
+                 </h6>
+             </Link>
+
+             <Link to={""}>
+                 <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
+                    style={{fontFamily: "Jura" }}>
+                    Testimonial
+                 </h6>
+             </Link>
+
+             <Link to={""}>
+                 <h6 className='text-[15px] leading-[18.75px] mt-[20px]'
+                    style={{fontFamily: "Jura" }}>
+                    Book a Flight
+                 </h6>
+             </Link>
+
         </div>
 
         </div>

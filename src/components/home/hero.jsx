@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import image from '../../assets/home.png';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [name, setName] = useState('');
@@ -51,21 +52,27 @@ const Home = () => {
           <p className='text-lg mt-4'
            style={{fontFamily: "Jura",
            }}>Uncompromising Luxury, Unforgettable Journeys.</p>
-          <button className='mt-6 px-6 py-2 bg-[#FFFFFF] w-[228px] hover:bg-black hover:text-white border text-[#07060B] rounded-lg'>Request a Flight</button>
+           <Link to={"/desktop"}>
+            <button className='mt-6 px-6 py-2 bg-[#FFFFFF] w-[228px] hover:bg-black hover:text-white border text-[#07060B] rounded-lg'>Request a Flight</button>
+           </Link>
+          
         </div>
       </div>
 
       <div className="max-w-md mx-auto  p-4 border: 0.83px border-[#FFFFFF26] m-20 rounded-lg shadow-lg bg-[#0F0F0F]">
         <div className='flex justify-between gap-[5px]'>
-          <button className='hover:bg-white hover:text-black p-1 rounded-[9.01px] border-white border-[1px] '>One Trip</button>
-          <button className='hover:bg-white hover:text-black p-1 rounded-[9.01px] border-white border-[1px] '>Round Trip</button>
-          <button className='hover:bg-white hover:text-black p-1 rounded-[9.01px] border-white border-[1px] '>Multi Leg</button>
+          <button className='hover:bg-white hover:text-black p-1 px-3 rounded-[9.01px] border-white border-[1px] '
+          style={{fontFamily: "Jura",
+          }}>
+            One Trip</button>
+          <button className='hover:bg-white hover:text-black p-1 px-3 rounded-[9.01px] border-white border-[1px] '>Round Trip</button>
+          <button className='hover:bg-white hover:text-black p-1 px-3 rounded-[9.01px] border-white border-[1px] '>Multi Leg</button>
         </div>
 
         {error && <p className="text-red-500 mb-2">{error}</p>}
         <form onSubmit={handleSubmit}>
         <div className='w-[367px] h-[460px] '>
-        <section >
+        <section className='mt-2 border-b border-[#E4E4E4]'>
               <div className='flex gap-4'>
               <div className="mb-4">
                  <label htmlFor="name" className="block mb-1">Name</label>
@@ -75,7 +82,7 @@ const Home = () => {
                     value={name}
                     placeholder='Full Name'
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                    className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                     required
                  />
               </div>
@@ -87,7 +94,7 @@ const Home = () => {
                     value={email}
                     placeholder='dubai@gmail.com'
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                    className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                     required
                 />
               </div>
@@ -102,7 +109,7 @@ const Home = () => {
                        value={companyName}
                        placeholder='Weavenn'
                        onChange={(e) => setCompanyName(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                 </div>
@@ -114,7 +121,7 @@ const Home = () => {
                        value={phone}
                        placeholder='556 880 5569'
                        onChange={(e) => setPhone(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                 </div>
@@ -132,7 +139,7 @@ const Home = () => {
                        value={departureAirport}
                        placeholder='New York Airport'
                        onChange={(e) => setDepartureAirport(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                </div>
@@ -145,7 +152,7 @@ const Home = () => {
                        value={arrivalAirport}
                        placeholder='Dubai UAE Airport'
                        onChange={(e) => setArrivalAirport(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                </div>
@@ -159,7 +166,7 @@ const Home = () => {
                        value={departureDate}
                        placeholder='12/08/2024'
                        onChange={(e) => setDepartureDate(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                </div>
@@ -171,7 +178,7 @@ const Home = () => {
                        value={time}
                        placeholder='10 : 30 AM'
                        onChange={(e) => setTime(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                </div>
@@ -185,22 +192,24 @@ const Home = () => {
                        value={passengers}
                        placeholder='03'
                        onChange={(e) => setPassengers(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
+                       className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
                    />
                </div>
                <div className="mb-4">
-                   <label htmlFor="planeType" className="block mb-1">Plane Type</label>
-                   <input
-                       type="text"
-                       id="planeType"
-                       value={planeType}
-                       placeholder='Turbo prop'
-                       onChange={(e) => setPlaneType(e.target.value)}
-                       className="w-full p-1 rounded-[9.01px] bg-gray-700 text-white"
-                       required
-                   />
-               </div>
+               <label htmlFor="planeType" className="block mb-1">Plane Type</label>
+            <select
+                  id="planeType"
+                  value={planeType}
+                  onChange={(e) => setPlaneType(e.target.value)}
+                  className="w-[180px] p-1 px-2 rounded-lg bg-[#656363] text-white"
+                  required
+            >
+            <option  value="Turbo prop">Turbo prop</option>
+            <option value="Jet">Jet</option>
+            <option value="Helicopter">Helicopter</option>
+            </select>
+                </div>
             </div>
 
            </section>

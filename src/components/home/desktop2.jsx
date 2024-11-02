@@ -1,6 +1,7 @@
 import React from 'react';
 import image from "../../assets/thank you.png";
 import logo from "../../assets/logo2.png";
+import { Link } from 'react-router-dom';
 
 const Desktop = () => {
   return (
@@ -16,9 +17,11 @@ const Desktop = () => {
           <p className='text-[20px]' style={{ fontFamily: "Jura" }}>
             We look forward to speaking with you soon
           </p>
+          <Link to={"/"}>
           <p className='text-[12px] mt-3' style={{ fontFamily: "Jura" }}>
             Back to home
           </p>
+          </Link>
         </div>
       </div>
     </div>
