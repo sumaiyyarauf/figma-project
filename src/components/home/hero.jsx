@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import image from '../../assets/home.png';
 import { Link } from "react-router-dom";
+import logo1 from "../../assets/f1.png"
 
 const Home = () => {
   const [name, setName] = useState('');
@@ -133,11 +134,12 @@ const Home = () => {
             <div className='flex gap-4'>
                <div className="mb-4">
                    <label htmlFor="departureAirport" className="block mb-1">Departure Airport</label>
+                   {/* <img src={logo1} alt="" /> */}
                    <input
                        type="text"
                        id="departureAirport"
                        value={departureAirport}
-                       placeholder='New York Airport'
+                       placeholder='New York Airport' 
                        onChange={(e) => setDepartureAirport(e.target.value)}
                        className="w-full p-1 rounded-[9.01px] bg-[#656363] text-white"
                        required
